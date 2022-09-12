@@ -1,0 +1,125 @@
+.main{
+    overflow-y: scroll;
+    height: 100vh;
+    bottom: 0; 
+}
+.main::-webkit-scrollbar{
+    display: none; 
+}
+.app__overview{
+    margin-block: 20px; 
+    display: flex; 
+    justify-content: space-between
+}
+.app__overview > h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-text-black);
+}
+.app__overview > i {
+    color: #c8c5c5; 
+    font-size: 1.3rem;
+}
+.news{
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center;
+    background-color: var(--primary-color);
+    padding-block: 30px;
+    padding-inline: 30px;
+    border-radius: 20px;
+    color: white;
+    background-image: radial-gradient(circle at 110% 130%, var(--secondary-color) 20%, transparent 20%, transparent), 
+                      radial-gradient(circle at 95% 115%, var(--rear-color) 20%, transparent 20%, transparent),
+                      radial-gradient(circle at 1% 1%, var(--rear-color) 20%, transparent 20%, transparent);
+
+}
+.news > div > h3{
+    font-weight: 500;
+}
+.news > button {
+    padding-block: 10px; 
+    padding-inline: 25px;
+    border-radius: 20px;
+    outline: none; 
+    border: none; 
+}
+.quick__acess{
+    margin-block: 15px; 
+}
+.quick__acess > h3{
+    color: var(--color-text-black); 
+    margin-bottom: 15px; 
+}
+.quick__access-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quick__access-icons{
+    width: 10%;
+    border-radius: 5px;
+    height: min-content;
+    padding-block: 20px; 
+    display: flex;
+    background-color: var(--color-white);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.quick__access-icons p{
+    font-size: .8rem;
+    color: var(--color-dark-paragraph); 
+}
+.quick__access-icons i{
+    color: var(--rear-color); 
+}
+.income__expense-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.5;
+}
+.expense-container,
+.income-container{
+    width: 46.5%;
+}
+.expense-container > div, 
+.income-container > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+}
+.expense-container > div > h3, 
+.income-container > div > h3{
+    color: var(--color-text-black); 
+}
+
+.expense-container > p, 
+.income-container > p{
+    font-size: .8rem;  
+    color: var(--color-text-black);
+    font-weight: 800; 
+    padding-block: 10px; 
+    margin-inline-start: 10px; 
+}
+.expense-container > p > span, 
+.income-container > p > span{
+    font-weight: 500;
+    color: var(--color-text-black-faint);
+}
+.chart-container{
+    width: 100%; 
+}
+.fa-ellipsis{
+    color: var(--color-text-black-faint);
+    font-size: 1.2rem;
+}
+.overview-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}

@@ -1,0 +1,38 @@
+.side__bar{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100vh; 
+    padding-block: 20px;
+    position: sticky;
+    top: 0;
+}
+.cursor {
+    cursor: pointer;
+}
+.profile__picture > img{
+    width: 45px;
+    height: 80px;
+    border-radius: 100px;
+}
+.dashboard__icons {
+    flex-grow: 1; 
+    padding-top: 70px;
+}
+.dashboard__icons > div{
+    margin-top: 50px;
+    padding-inline: 10px; 
+    padding-block: 10px; 
+}
+.react-icons{
+    font-size: 20px;
+}
+.logout{
+    margin-bottom: 40px;
+}
+.active{
+    color: var(--primary-color); 
+    background-color: var(--primary-color-light); 
+    border-radius: 10px; 
+}
